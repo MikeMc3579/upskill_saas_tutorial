@@ -5,4 +5,10 @@ class PagesController < ApplicationController
     def about
     end
     
+    def developers
+    end
+    
+    def investors
+    end
+    
 end
