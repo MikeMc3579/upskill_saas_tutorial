@@ -40,6 +40,17 @@ p {
     border: none;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+    backgroud-color: white;
+}
+
+.navbar-default .navbar-toggle {
+     border: 2px solid white;
+     &:hover, {
+         background-color: #203A43;
+     }
+}
+
 //Navbar Styles
 .navbar-default .navbar-brand, 
 .navbar-default .navbar-nav  > li > a  {
