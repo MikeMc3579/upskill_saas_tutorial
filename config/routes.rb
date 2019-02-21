@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     get 'about', to: 'pages#about'
     get 'developers', to: 'pages#developers'
     get 'investors', to: 'pages#investors'
+    resources :contacts
 
 end
     
