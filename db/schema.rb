@@ -12,12 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20190221234045) do
 
-  create_table "contacs", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.text   "comments"
-  end
-
   create_table "contacts", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
