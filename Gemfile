@@ -31,6 +31,9 @@ gem 'capistrano-rails', group: :development
 # Use Font Awesome library for logo designs
 gem 'font-awesome-sass', '5.6.1'
 
+# Use Hirb for better database display in console
+gem 'hirb', '0.7.3'
+
 # Use Twitter Bootstrap library for front end UI and layout
 gem 'bootstrap-sass', '3.3.7'
 
