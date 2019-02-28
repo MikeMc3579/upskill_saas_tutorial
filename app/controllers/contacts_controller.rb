@@ -7,9 +7,9 @@ class ContactsController < ApplicationController
         @contact = Contact.new(contact_params)
         if @contact.save
             flash[:success] = "Success!"
-            redirect_to root_path 
+            redirect_to root_path
         else
-            flash[:error] = @contact.errors.full_messages.join(" , ")
+            flash[:danger] = @contact.errors.full_messages.join(",  ")
             redirect_to new_contact_path
         end
     end
