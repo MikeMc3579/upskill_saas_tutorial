@@ -4,18 +4,19 @@ class ContactsController < ApplicationController
     end
     
     def create
-        @contact = Contact.new(contact_params)
+        @contact = Contact.new(contacts_params)
         if @contact.save
             flash[:success] = "Success!"
             redirect_to root_path
         else
             flash[:danger] = @contact.errors.full_messages.join(",  ")
-            redirect_to new_contact_path
+            redirect_to root_path
         end
     end
     
     private
-    def contact_params
-        params.require(:contact).permit(:name, :email, :comments)
-    end
+
+    def contacts_params
+        params.require(:contacts).permit(:name, :email, :comments)
+    end    
 end
