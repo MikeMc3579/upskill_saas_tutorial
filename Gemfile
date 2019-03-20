@@ -56,6 +56,7 @@ end
 group :production do
   #Use the PostgreSQL gem for heroku production servers
   gem 'pg', '0.18.4'
+  gem 'rest-client', '2.1.0rc1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
