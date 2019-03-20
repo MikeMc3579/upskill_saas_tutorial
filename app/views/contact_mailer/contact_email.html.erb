@@ -2,10 +2,12 @@
 <html>
     <head></head>
     <body>
-        <div class="Contact Request">
-            <h1>You have received a DevMatch message from
-            <%= "#{ @name } at #{ @email }." %></h1>
-            <p><%= @body %></p>
+        <div class="Container">
+            <div class="Contact Request">
+                <h3>You have received a DevMatch message from
+                <%= "#{ @name } at #{ @email }." %></h3>
+                <p><%= @body %></p>
+            </div>
         </div>
     </body>
 </html>
